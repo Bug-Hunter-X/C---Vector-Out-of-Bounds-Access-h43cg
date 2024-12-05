@@ -1,0 +1,3 @@
+# C++ Vector Out-of-Bounds Access Bug
+
+This repository demonstrates a common C++ error: accessing an element in a `std::vector` beyond its valid index range.  The bug is in the loop condition which causes accessing `vec[vec.size()]`, which is one element past the last valid element.  This results in undefined behavior, which can manifest in various ways including crashes, incorrect results, or seemingly random behavior. The solution demonstrates the proper way to iterate through a vector.
